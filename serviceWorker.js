@@ -3,7 +3,7 @@ self.addEventListener('install', function (event) {
     self.skipWaiting();
 
     var offlinePage = new Request('index.html');
-    var assest = ['/', './index.html', './assets/index.00cecb89.js', './favicon.ico', './manifest.json', './assets/index.6174dcc6.css', './assets/vendor.aaca27d0.js']
+    var assest = ['/', './index.html', './assets/index.2215e8e1.js', './favicon.ico', './manifest.json', './assets/index.6ea96366.css', './assets/vendor.9865ff5b.js']
     event.waitUntil(
         fetch(assest).then(function (response) {
             return caches.open('static').then(function (cache) {
